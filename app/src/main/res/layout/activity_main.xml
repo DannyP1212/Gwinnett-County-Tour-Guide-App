@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6ac6e"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a8c19" >
+
+        <TextView
+            android:id="@+id/Parks"
+            style="@style/category"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Parks" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a32f31" >
+
+        <TextView
+            android:id="@+id/Restaurants"
+            style="@style/category"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Restaurants" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7573c7" >
+
+        <TextView
+            android:id="@+id/Shops"
+            style="@style/category"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Shopping Centers" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cfba34" >
+
+        <TextView
+            android:id="@+id/Landmarks"
+            style="@style/category"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Historical Landmarks"
+            tools:ignore="TextContrastCheck" />
+
+    </FrameLayout>
+
+</LinearLayout>
