@@ -1,28 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
     android:padding="12dp">
 
     <TextView
         android:id="@+id/TextForPlace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:fontFamily="@font/autour_one"
         android:gravity="center"
         android:textColor="@color/black"
-        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/ImageOfPlace"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:paddingTop="10dp" />
+        android:scaleType="centerCrop"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/MoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/autour_one"
+            android:text="More Information"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/autour_one"
+            android:text="Reminder"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/AddressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/WebsiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="5dp"
+        android:textColor="#0000FF"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/RestaurantTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:visibility="gone" />
 
 
 </LinearLayout>
